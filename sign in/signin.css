@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #004d25;
+    padding: 0 10px;
+}
+
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5d5d9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .textarea {
+    resize: none;
+    height: 125px;
+}
+
+.wrapper .form .input_field .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper .form .input_field .custom_select select {
+    border: 1px solid #d5d5d9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus,
+.wrapper .form .input_field select:focus {
+    border: 1px solid #004d25;
+}
+
+.wrapper .form .input_field p {
+    font-size: 14px;
+    color: #757575;
+}
+
+.wrapper .form .input_field .check {
+    /**/
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper .form .input_field .btn {
+    width: 100%;
+    padding: 8px 10px;
+    border: 0;
+    background: #004d25;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field :last-child {
+    margin-bottom: 0;
+}
+
+.wrapper .form .input_field .btn:hover {
+    background: #48bf53;
+}
+
+@media(max-width: 420px) {
+    .wrapper .form .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .input_field label {
+        margin-bottom: 5px;
+    }
+    .wrapper .form .input_field.terms {
+        flex-direction: row;
+    }
+}
+
+   
+label{
+    color: #004d25;
+}
+.termsandcondtion_modal{
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 5px;
+    left: 35%;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    top: 40vh;
+    text-align: center;
+    
+}
+.termsandcondtion_modal h4{
+    padding: 100px ;
+}
+.cross{
+    cursor: pointer;
+    margin-left: 95%;
+}
+@media (max-width:900px) {
+    .termsandcondtion_modal{
+        left: 0;
+    }
+}
