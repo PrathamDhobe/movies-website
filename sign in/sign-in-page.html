@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signin.css">
+    <title>Register Yourself</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Registration form</div>
+        <div class="form">
+            <div class="input_field">
+                <label>First Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Last Name</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Password</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field">
+                <label>Confirm Password</label>
+                <input type="password" class="input">
+            </div>
+            <div class="input_field">
+                <label>Gender</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Trans</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Email Address</label>
+                <input type="email" class="input">
+            </div>
+            <div class="input_field">
+                <label>Phone Number</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field">
+                <label>Address</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <div class="input_field">
+                <label>Postal Code</label>
+                <input type="text" class="input">
+            </div>
+            <div class="input_field terms">
+                <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+               </label>
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="termsandcondtion_modal">
+        <div class="cross" onclick="closemodal()"><i class="fa fa-close" style="font-size:24px"></i></div>
+        <h4>We are going to still your data please give us permission by clicking on agree </h4>
+    </div>
+    
+</body>
+<script>
+    const closemodal=()=>{
+        let changes= document.getElementsByClassName("termsandcondtion_modal")[0].style.display = "none";
+    }
+</script>
+
+</html>
