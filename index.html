@@ -15,6 +15,12 @@
     <!-- 
     - custom css link
   -->
+  <style>
+    /* Style for the search box */
+    .search-box {
+      display: none;
+    }
+  </style>
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- 
@@ -42,9 +48,14 @@
 
             <div class="header-actions">
 
-                <button class="search-btn">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
+                <button class="search-btn" onclick="toggleSearch()">
+                    <ion-icon name="search-outline"></ion-icon>
+                  </button>
+                
+                  <div class="search-box">
+                    <input type="text" id="search-input" placeholder=" search here">
+                    <button onclick="performSearch()"></button>
+                  </div>
 
                 <div class="lang-wrapper">
                     <label for="language">
@@ -1150,6 +1161,27 @@
 
 
     <p class="gb">these is movie website</p>
+
+
+    <!-- JavaScript to toggle search box visibility and handle search -->
+  <script>
+    // Function to toggle the visibility of the search box
+    function toggleSearch() {
+      const searchBox = document.querySelector('.search-box');
+      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+        searchBox.style.display = 'block';
+      } else {
+        searchBox.style.display = 'none';
+      }
+    }
+
+    // Function to perform the search (you can replace this with your search logic)
+    function performSearch() {
+      const searchQuery = document.getElementById('search-input').value;
+      alert('Performing search for: ' + searchQuery);
+      // Add your actual search logic here
+    }
+  </script>
 
 </body>
 
